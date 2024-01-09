@@ -101,7 +101,7 @@ The `Function` struct is going to be created by the parser to represent each of 
 {{#include ../../../examples-2022/calc/src/ir.rs:functions}}
 ```
 
-If we had created some `Function` instance `f`, for example, we might find that `the f.body` field changes
+If we had created some `Function` instance `f`, for example, we might find that the `f.body` field changes
 because the user changed the definition of `f`.
 This would mean that we have to re-execute those parts of the code that depended on `f.body`
 (but not those parts of the code that depended on the body of *other* functions).
